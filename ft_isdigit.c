@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbiallac <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nbiallac <nbiallac@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 17:45:59 by nbiallac          #+#    #+#             */
-/*   Updated: 2026/10/16 17:59:54 by nbiallac         ###   ########.fr       */
+/*   Updated: 2026/11/02 19:12:21 by nbiallac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int i)
 {
@@ -16,6 +18,5 @@ int	ft_isdigit(int i)
 	{
 		return (1);
 	}
-	else
-		return (0);
+	return (0);
 }

@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbiallac <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nbiallac <nbiallac@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 18:00:35 by nbiallac          #+#    #+#             */
-/*   Updated: 2026/10/16 18:13:44 by nbiallac         ###   ########.fr       */
+/*   Updated: 2026/11/02 19:17:08 by nbiallac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalnum(int a)
 {
-	if (a >= 'a' && a <= 'z' || a >= 'A' && a <= 'Z' || a >= '0' && a <= '9')
+	if (ft_isalpha(a) || (a >= '0' && a <= '9'))
 	{
 		return (1);
 	}
-	else
-		return (0);
+	return (0);
 }

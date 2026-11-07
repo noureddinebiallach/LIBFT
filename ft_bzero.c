@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbiallac <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nbiallac <nbiallac@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:15:53 by nbiallac          #+#    #+#             */
-/*   Updated: 2026/10/20 11:19:13 by nbiallac         ###   ########.fr       */
+/*   Updated: 2026/10/30 20:11:47 by nbiallac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<stdio.h>
-void	*ft_bzero(void *str, unsigned int n)
+
+#include "libft.h"
+
+void	*ft_bzero(void *str, size_t n)
 {
 	unsigned char	*ustr;
-	unsigned int	i;
+	size_t			i;
 
 	ustr = (unsigned char *)str;
 	i = 0;
@@ -23,9 +25,4 @@ void	*ft_bzero(void *str, unsigned int n)
 		i++;
 	}
 	return (str);
-}
-
-int main()
-{
-	
 }
